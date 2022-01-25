@@ -22,9 +22,9 @@ app.post('/users', async (req, res) => {
 app.get('/users', async (req, res) => {
   const usersRep = new UsersRepository()
 
-  const users = await usersRep.findAll()
+  const [users, count] = await usersRep.findAll()
 
-  return res.json(users)
+  return res.json({ users, count })
 })
 
 

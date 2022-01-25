@@ -1,8 +1,8 @@
 # Exemplo de retorno
 
 ```json
-[
-  [
+{
+  "users": [
     {
       "id": "509be325-e559-41ec-9fa2-de8bd165475e",
       "email": "nelson@mail.com",
@@ -41,6 +41,6 @@
       "followingsMany": []
     }
   ],
-  3
-]
+  "count": 3
+}
 ```
