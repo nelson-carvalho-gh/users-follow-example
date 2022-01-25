@@ -10,6 +10,7 @@ export class UsersRepository {
 
   public async findAll() {
     return this.ormRep.findAndCount({
+      // Necessita desses relations em todos os find para trazer quando quiser
       relations: ['followersMany', 'followingsMany']
     })
   }
